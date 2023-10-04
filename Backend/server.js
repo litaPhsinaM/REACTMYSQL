@@ -16,8 +16,8 @@ app.get('/', (re, res)=> {
     return res.json("From Backend Side");
 })
 
-app.get('/branch', (req, res)=>{
-    const sql = "SELECT * FROM branch";
+app.get('/employee', (req, res)=>{
+    const sql = "SELECT * FROM employee";
     db.query(sql, (err, data) =>{
         if(err) return res.json(err);
         return res.json(data);
